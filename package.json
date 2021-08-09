@@ -1,0 +1,22 @@
+{
+  "name": "can.cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caueaquino/can.cypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caueaquino/can.cypress/issues"
+  },
+  "homepage": "https://github.com/caueaquino/can.cypress#readme",
+  "devDependencies": {
+    "cypress": "^8.2.0"
+  }
+}
