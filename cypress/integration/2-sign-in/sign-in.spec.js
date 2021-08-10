@@ -3,7 +3,8 @@
 
 describe('sign in can website', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:4200/auth/sign-in')
+    cy.visit('http://localhost:4200/auth/sign-in');
+    cy.clearLocalStorage();
   })
 
   it('have to access sign in page', () => {
@@ -56,6 +57,7 @@ describe('sign in can website', () => {
 
     cy.get('button')
       .contains('Sign in')
+      .should('be.visible')
       .click();
 
     cy.get('can-alert-dialog')
@@ -72,11 +74,11 @@ describe('sign in can website', () => {
       .contains('Sign in')
       .click();
 
-    cy.get('.sig in')
+    cy.get('.sign-in mat-error')
       .contains('Email is required')
       .should('be.visible');
 
-    cy.get('.sig in')
+    cy.get('.sign-in mat-error')
       .contains('Password is required')
       .should('be.visible');
   })
